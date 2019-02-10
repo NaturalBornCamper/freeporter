@@ -1,5 +1,7 @@
 import os
 
+DB_DEBUG_FILE = "Freeeporter.db"
+
 FOLDERS = {
     "passive": os.path.join("C:", "Users", "Marco", "Dropbox", "Array51", "Passif"),
     # "passive": "C:/Users/Marco/Dropbox/Array51/Passif/",
@@ -13,6 +15,9 @@ DEFAULT_CURRENCY = "CAD"
 
 REGEXES = {
     "date": r'(\d{4}-\d{2}-\d{2})',  # Change it to accept 2018-07 for example (monthly invoice)
+    "year": r'(\d{4})',
+    "month": r'\d{4}-(\d{2})',
+    "day": r'\d{4}-\d{2}-(\d{2})',
     "subtotal": r'\(\W*([a-zA-Z]{3})?\D*?([0-9,\.]+)\D*?\)',
     "gst": r'\[\W*([a-zA-Z]{3})?\D*?([0-9,\.]+)\D*?\]',
     "pst": r'\{\W*([a-zA-Z]{3})?\D*?([0-9,\.]+)\D*?\}',
@@ -38,3 +43,12 @@ INCOME_TAX_RATE_SLICES = {
         {"amount": 9999999999, "rate": 0.2575},
     ]
 }
+
+
+class STRINGS:
+    APP_TITLE = "Freeporter"
+
+
+class ERROR_CODES:
+    DB_CANNOT_CONNECT = -1
+    DB_CANNOT_CREATE_TABLE = -2

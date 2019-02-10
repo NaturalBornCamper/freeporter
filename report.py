@@ -6,11 +6,22 @@ from locale import *
 from os.path import basename, dirname
 
 import constants
-from log import Log
+from pyrotools.log import Log
+
+# "class" to permit arrays/dictionaries/lists like this:
+# x = nested_dict()
+# x[3][1]["dfdf"]["allo"][4] = "created on the fly"
+nested_dict = lambda: defaultdict(nested_dict)
+
+
+def nd(nes):
+    return defaultdict(nes)
 
 
 class Report:
-    def __init__(self):
+    def __init__(self, journal):
+        self.journal = journal
+
         self.passive = {}
 
         self.active = {
@@ -32,21 +43,23 @@ class Report:
         matches = re.search(constants.REGEXES[category], filename)
         # matches = re.search(r'(\D+)?(\d+\.?\d+)', price_string)
         if matches is not None:
+            return atof(matches[2]) if matches[2] else 0.0
             return {
                 "currency": matches[1] if matches[1] else constants.DEFAULT_CURRENCY,
                 "amount": atof(matches[2]) if matches[2] else 0.0,
                 # "amount": float(matches[2].replace(',', '')) if matches[2] else 0.0,
             }
         else:
+            return 0.0
             return {"currency": constants.DEFAULT_CURRENCY, "amount": 0.0}
 
-    def __extract_single_element(self, filename, category):
-        matches = re.search(constants.REGEXES[category], filename)
+    def __extract_single_element(self, string, category):
+        matches = re.search(constants.REGEXES[category], string)
         # matches = re.search(r'(\D+)?(\d+\.?\d+)', price_string)
         if matches is not None:
             return matches[1].strip()
         else:
-            Log.w(message=(category + "amount not formatted correctly in " + filename))
+            Log.w(message=(category + "is not formatted correctly in " + string))
             return False
 
     def __process_filename(self, filename):
@@ -70,7 +83,8 @@ class Report:
 
     def __extract_data(self, folder):
         data = {
-            "journal": defaultdict(list),
+            "journal": nested_dict(),
+            # "journal": defaultdict(dict),
             "total": {
                 "subtotal": defaultdict(float),
                 "gst": defaultdict(float),
@@ -82,9 +96,28 @@ class Report:
 
             journal_entry = self.__process_filename(file_basename)
             if journal_entry:
-                data["journal"][journal_entry["date"]].append(journal_entry)
-                for x in ("subtotal", "gst", "pst"):
-                    data["total"][x][journal_entry[x]["currency"]] += journal_entry[x]["amount"]
+                year = self.__extract_single_element(journal_entry["date"], "year")
+                month = self.__extract_single_element(journal_entry["date"], "month") or "01"
+                day = self.__extract_single_element(journal_entry["date"], "day") or "01"
+                if not data["journal"][year][month][day]:
+                    data["journal"][year][month][day] = []
+                data["journal"][year][month][day].append(journal_entry)
+                # data["journal"][journal_entry["date"]].append(journal_entry)
+                #date, year, month, day, name, amount, gst, pst, direction
+                self.journal.insert((
+                    journal_entry["date"],
+                    year,
+                    month,
+                    day,
+                    journal_entry["description"],
+                    float(journal_entry["subtotal"]),
+                    float(journal_entry["gst"]),
+                    float(journal_entry["pst"]),
+                    "in"
+                ))
+
+                # for x in ("subtotal", "gst", "pst"):
+                #     data["total"][x][journal_entry[x]["currency"]] += journal_entry[x]["amount"]
 
         return data
 
@@ -107,13 +140,15 @@ class Report:
         for folder in glob.glob(os.path.join(constants.FOLDERS["active"], '*/')):
             self.active["clients"][basename(dirname(folder))] = client_data = self.__extract_data(folder)
 
-            for section in ["subtotal", "gst", "pst"]:
-                for currency in client_data["total"][section]:
-                    self.active["total"][section][currency] += client_data["total"][section][currency]
+        self.journal.commit_changes()
 
-        self.brute_revenue = self.active["total"]["subtotal"][constants.DEFAULT_CURRENCY]
-        self.total_expenses = self.passive["total"]["subtotal"][constants.DEFAULT_CURRENCY]
-        self.net_revenue = self.brute_revenue - self.total_expenses
-
-        self.provincial_income_tax = self.__calculate_income_tax(self.net_revenue, "quebec")
-        self.federal_income_tax = self.__calculate_income_tax(self.net_revenue, "canada")
+        #     for section in ["subtotal", "gst", "pst"]:
+        #         for currency in client_data["total"][section]:
+        #             self.active["total"][section][currency] += client_data["total"][section][currency]
+        #
+        # self.brute_revenue = self.active["total"]["subtotal"][constants.DEFAULT_CURRENCY]
+        # self.total_expenses = self.passive["total"]["subtotal"][constants.DEFAULT_CURRENCY]
+        # self.net_revenue = self.brute_revenue - self.total_expenses
+        #
+        # self.provincial_income_tax = self.__calculate_income_tax(self.net_revenue, "quebec")
+        # self.federal_income_tax = self.__calculate_income_tax(self.net_revenue, "canada")
