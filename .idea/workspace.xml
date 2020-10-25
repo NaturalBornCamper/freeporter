@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f28d6d5-365f-4afb-ab39-ab0e52ebf7c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/budget-extractor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/budget-extractor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MainWindow.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Models/journal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/journal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/UI_MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UI_MainWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Views/UI_MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UI_MainWindow.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report.py" beforeDir="false" afterPath="$PROJECT_DIR$/report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,6 +165,7 @@
       <workItem from="1596729307385" duration="72000" />
       <workItem from="1596729541688" duration="22000" />
       <workItem from="1601408128988" duration="14691000" />
+      <workItem from="1603653035833" duration="7318000" />
     </task>
     <task id="LOCAL-00001" summary="+Adds Model files for sqlite3&#10;=Adds required modules&#10;=Reorders files into MVC&#10;+Adds ui files to have graphical interface">
       <created>1549790389811</created>
@@ -225,42 +219,42 @@
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596728005484" />
     <state x="648" y="266" key="FileChooserDialogImpl/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601426504397" />
-    <state width="1637" height="175" key="GridCell.Tab.0.bottom" timestamp="1601503415242">
+    <state width="1637" height="314" key="GridCell.Tab.0.bottom" timestamp="1603661037098">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1877" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
-    <state width="1637" height="175" key="GridCell.Tab.0.bottom/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
-    <state width="1637" height="175" key="GridCell.Tab.0.center" timestamp="1601503415242">
+    <state width="1637" height="314" key="GridCell.Tab.0.bottom/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037098" />
+    <state width="1637" height="314" key="GridCell.Tab.0.center" timestamp="1603661037097">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1877" height="366" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
-    <state width="1637" height="175" key="GridCell.Tab.0.center/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
-    <state width="1637" height="175" key="GridCell.Tab.0.left" timestamp="1601503415242">
+    <state width="1637" height="314" key="GridCell.Tab.0.center/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037097" />
+    <state width="1637" height="314" key="GridCell.Tab.0.left" timestamp="1603661037097">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1877" height="366" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627656" />
-    <state width="1637" height="175" key="GridCell.Tab.0.left/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
-    <state width="1637" height="175" key="GridCell.Tab.0.right" timestamp="1601503415242">
+    <state width="1637" height="314" key="GridCell.Tab.0.left/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037097" />
+    <state width="1637" height="314" key="GridCell.Tab.0.right" timestamp="1603661037097">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state width="1877" height="366" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
-    <state width="1637" height="175" key="GridCell.Tab.0.right/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
+    <state width="1637" height="314" key="GridCell.Tab.0.right/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037097" />
     <state x="403" y="159" key="SettingsEditor" timestamp="1601431071517">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596729556309" />
     <state x="403" y="159" key="SettingsEditor/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601431071517" />
-    <state x="222" y="73" width="1228" height="848" key="find.popup" timestamp="1601436237315">
+    <state x="222" y="73" width="1228" height="848" key="find.popup" timestamp="1603660640850">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="254" y="75" width="1403" height="873" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595448900419" />
-    <state x="222" y="73" width="1228" height="848" key="find.popup/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601436237315" />
+    <state x="222" y="73" width="1228" height="848" key="find.popup/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603660640850" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595448877563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595448877563" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Freeporter$main.coverage" NAME="main Coverage Results" MODIFIED="1601436248208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Freeporter$main.coverage" NAME="main Coverage Results" MODIFIED="1603661037090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

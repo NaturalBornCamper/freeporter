@@ -68,8 +68,11 @@ class Report:
             "subtotal": self.__extract_price(filename, "subtotal"),
             "gst": self.__extract_price(filename, "gst"),
             "pst": self.__extract_price(filename, "pst"),
+            "share": self.__extract_single_element(filename, "share"),
             "description": self.__extract_single_element(filename, "description")
         }
+        journal_entry['share'] = atof(journal_entry['share']) if journal_entry['share'] else 1.0
+
 
         if any([journal_entry["subtotal"], journal_entry["gst"], journal_entry["pst"]]):
             if not journal_entry["date"]:
@@ -130,6 +133,7 @@ class Report:
                     float(journal_entry["subtotal"]),
                     float(journal_entry["gst"]),
                     float(journal_entry["pst"]),
+                    float(journal_entry["share"]),
                     direction
                 ))
 
@@ -140,7 +144,8 @@ class Report:
                     '"' + journal_entry["description"] + '",',
                     '"' + str(journal_entry["subtotal"]) + '",',
                     '"' + str(journal_entry["gst"]) + '",',
-                    '"' + str(journal_entry["pst"]) + '"'
+                    '"' + str(journal_entry["pst"]) + '",',
+                    '"' + str(journal_entry["share"]) + '"',
                 )
 
                 # for x in ("subtotal", "gst", "pst"):

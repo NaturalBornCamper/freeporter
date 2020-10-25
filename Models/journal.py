@@ -15,6 +15,7 @@ sql_create_projects_table = """ CREATE TABLE IF NOT EXISTS journal (
                                         amount REAL DEFAULT 0.0,
                                         gst REAL DEFAULT 0.0,
                                         pst REAL DEFAULT 0.0,
+                                        share REAL DEFAULT 1.0,
                                         direction TEXT DEFAULT 'ingress'
                                     ); """
 
@@ -44,8 +45,8 @@ class Journal(Model):
         :return:
         """
 
-        sql = """INSERT INTO journal(date, year, month, day, name, folder, amount, gst, pst, direction)
-                  VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"""
+        sql = """INSERT INTO journal(date, year, month, day, name, folder, amount, gst, pst, share, direction)
+                  VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"""
         cur = self.conn.cursor()
         cur.execute(sql, journal_entry)
 

@@ -1,6 +1,7 @@
 import locale
 from pprint import pprint
 
+from PyQt5.QtCore import Qt
 from PyQt5.QtWidgets import QMainWindow, qApp
 from PyQt5 import QtWidgets
 from pyrotools import console
@@ -19,6 +20,8 @@ class MainWindow(QMainWindow):
         self.selected_months = []
         self.selected_inputs = []
         self.selected_outputs = []
+
+        self.use_share_only = False
 
     def quit_trigger(self):
         qApp.quit()
@@ -95,6 +98,7 @@ class MainWindow(QMainWindow):
             item.setData(100, journal_item["amount"])
             item.setData(101, journal_item["gst"])
             item.setData(102, journal_item["pst"])
+            item.setData(103, journal_item["share"])
             item.setText(journal_item["name"] or journal_item["date"])
 
             if journal_item["direction"] == "in":
@@ -115,9 +119,10 @@ class MainWindow(QMainWindow):
         # for item in self.main_ui.ActivesListWidget.selectedItems():
         for item in getattr(self.main_ui, "ActivesListWidget").selectedItems():
             # selected_actives = self.get_selected_list_items(list_widget="ActivesListWidget")
-            amount_total += item.data(100)
-            gst_total += item.data(101)
-            pst_total += item.data(102)
+            share = item.data(103) if self.use_share_only else 1.0
+            amount_total += item.data(100) * share
+            gst_total += item.data(101) * share
+            pst_total += item.data(102) * share
             # pprint(item)
 
         # locale.setlocale(locale.LC_ALL, '')
@@ -144,9 +149,10 @@ class MainWindow(QMainWindow):
 
         # for item in self.main_ui.ActivesListWidget.selectedItems():
         for item in getattr(self.main_ui, "PassivesListWidget").selectedItems():
-            amount_total += item.data(100)
-            gst_total += item.data(101)
-            pst_total += item.data(102)
+            share = item.data(103) if self.use_share_only else 1.0
+            amount_total += item.data(100) * share
+            gst_total += item.data(101) * share
+            pst_total += item.data(102) * share
 
         locale.setlocale(locale.LC_ALL, 'en_CA')
         self.main_ui.TotalExpensesLineEdit.setText(locale.currency(amount_total, grouping=True))
@@ -206,9 +212,11 @@ class MainWindow(QMainWindow):
         cprint(console.COLORS.BRIGHT_BLUE, "open_passives_folder_selection_dialog()")
         pass
 
-    def use_deductible_percentage_only(self):
+    def use_deductible_percentage_only(self, checkbox_widget):
         cprint(console.COLORS.BRIGHT_BLUE, "use_deductible_percentage_only()")
-        pass
+        self.use_share_only = checkbox_widget == Qt.Checked
+        self.select_actives()
+        self.select_passives()
 
     def filter_passive_equipment(self):
         cprint(console.COLORS.BRIGHT_BLUE, "filter_passive_equipment()")
