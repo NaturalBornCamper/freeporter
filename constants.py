@@ -3,15 +3,18 @@ import os
 DB_DEBUG_FILE = "Freeeporter.db"
 
 FOLDERS = {
-    "passive": os.path.join("C:", "Users", "Marco", "Dropbox", "Array51", "Passif"),
+    "passive": os.path.join("C:", "Users", "Marco", "Dropbox", "Array51", "Passif", "**"),
     # "passive": "C:/Users/Marco/Dropbox/Array51/Passif/",
-    "active": os.path.join("C:", "Users", "Marco", "Dropbox", "Array51", "Actif"),
+    "active": os.path.join("C:", "Users", "Marco", "Dropbox", "Array51", "Actif", "**"),
     # "active": "C:/Users/Marco/Dropbox/Array51/Actif/"
 }
 
 PASSIVES_FILE_TYPES = "*.pdf"
 ACTIVES_FILE_TYPES = "*.pdf"
 DEFAULT_CURRENCY = "CAD"
+
+MONEY_INPUT = "in"
+MONEY_OUTPUT = "out"
 
 REGEXES = {
     "date": r'(\d{4}-\d{2}-\d{2})',  # Change it to accept 2018-07 for example (monthly invoice)

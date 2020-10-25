@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1091</width>
+    <width>1006</width>
     <height>854</height>
    </rect>
   </property>
@@ -31,7 +31,7 @@
        <widget class="QLineEdit" name="ActivesFolderLineEdit"/>
       </item>
       <item>
-       <widget class="QPushButton" name="selectActivesFolderButton">
+       <widget class="QPushButton" name="SelectActivesFolderButton">
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -44,7 +44,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="includeActivesSubfolderCheckbox">
+       <widget class="QCheckBox" name="IncludeActivesSubfolderCheckbox">
         <property name="text">
          <string>Include subfolders</string>
         </property>
@@ -69,7 +69,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="selectPassivesFolderButton">
+       <widget class="QPushButton" name="SelectPassivesFolderButton">
         <property name="maximumSize">
          <size>
           <width>16777215</width>
@@ -82,7 +82,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QCheckBox" name="includePassivesSubfolderCheckbox">
+       <widget class="QCheckBox" name="IncludePassivesSubfolderCheckbox">
         <property name="text">
          <string>Include subfolders</string>
         </property>
@@ -150,7 +150,7 @@
            </layout>
           </item>
           <item>
-           <widget class="QListWidget" name="yearListWidget">
+           <widget class="QListWidget" name="YearListWidget">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -222,7 +222,7 @@
            </layout>
           </item>
           <item>
-           <widget class="QListWidget" name="monthListWidget">
+           <widget class="QListWidget" name="MonthListWidget">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -326,14 +326,14 @@
            </spacer>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit">
+           <widget class="QLineEdit" name="FilterActivesLineEdit">
             <property name="placeholderText">
              <string>Type to filter</string>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="allActiveButton">
+           <widget class="QPushButton" name="AllActiveButton">
             <property name="maximumSize">
              <size>
               <width>30</width>
@@ -361,7 +361,7 @@
          </layout>
         </item>
         <item>
-         <widget class="QListWidget" name="activesListWidget">
+         <widget class="QListWidget" name="ActivesListWidget">
           <property name="selectionMode">
            <enum>QAbstractItemView::ExtendedSelection</enum>
           </property>
@@ -462,7 +462,7 @@
            </spacer>
           </item>
           <item>
-           <widget class="QLineEdit" name="lineEdit_2">
+           <widget class="QLineEdit" name="FilterPassivesLineEdit">
             <property name="placeholderText">
              <string>Type to filter</string>
             </property>
@@ -497,7 +497,53 @@
          </layout>
         </item>
         <item>
-         <widget class="QListWidget" name="passivesListWidget">
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <widget class="QCheckBox" name="FilterPassiveEquipmentCheckbox">
+            <property name="text">
+             <string>Equipment</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QCheckBox" name="FilterPassiveServicesCheckbox">
+            <property name="text">
+             <string>Services</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="2">
+           <widget class="QCheckBox" name="FilterPassiveTravelCheckbox">
+            <property name="text">
+             <string>Travel</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QCheckBox" name="FilterPassiveAdhesionFeesCheckbox">
+            <property name="text">
+             <string>Adhesion fees</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QCheckBox" name="FilterPassiveOthersCheckbox">
+            <property name="text">
+             <string>Others</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QCheckBox" name="FilterPassiveOfficeFurnituresCheckbox">
+            <property name="text">
+             <string>Office furnitures</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QListWidget" name="PassivesListWidget">
           <property name="editTriggers">
            <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed</set>
           </property>
@@ -606,8 +652,8 @@
         </item>
         <item>
          <layout class="QGridLayout" name="gridLayout">
-          <item row="18" column="2">
-           <widget class="QLineEdit" name="netRevenueLineEdit">
+          <item row="16" column="2">
+           <widget class="QLineEdit" name="FederalDuesLineEdit">
             <property name="acceptDrops">
              <bool>false</bool>
             </property>
@@ -616,53 +662,29 @@
             </property>
            </widget>
           </item>
-          <item row="18" column="1">
-           <widget class="QLabel" name="label_20">
+          <item row="3" column="1">
+           <widget class="QLabel" name="label_10">
             <property name="text">
-             <string>Net revenue</string>
+             <string>GST</string>
             </property>
            </widget>
           </item>
-          <item row="11" column="2">
-           <widget class="QLineEdit" name="totalExpensesGstPstLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
+          <item row="4" column="1">
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>PST + GST</string>
             </property>
            </widget>
           </item>
           <item row="15" column="1">
-           <widget class="QLabel" name="label_17">
-            <property name="text">
-             <string>Federal dues</string>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="1">
            <widget class="QLabel" name="label_16">
             <property name="text">
              <string>Gross revenue</string>
             </property>
            </widget>
           </item>
-          <item row="16" column="1">
-           <widget class="QLabel" name="label_18">
-            <property name="text">
-             <string>Provincial dues</string>
-            </property>
-           </widget>
-          </item>
-          <item row="17" column="1">
-           <widget class="QLabel" name="label_19">
-            <property name="text">
-             <string>Total dues</string>
-            </property>
-           </widget>
-          </item>
-          <item row="12" column="1" colspan="2">
-           <spacer name="verticalSpacer_2">
+          <item row="20" column="1" colspan="2">
+           <spacer name="verticalSpacer_4">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -673,6 +695,47 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="12" column="1">
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>PST + GST</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="2">
+           <widget class="QLineEdit" name="NetRevenueLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="17" column="1">
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Provincial dues</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Amount</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1" colspan="2">
+           <widget class="QLabel" name="label_9">
+            <property name="text">
+             <string>EXPENSES</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
           </item>
           <item row="5" column="1" colspan="2">
            <spacer name="verticalSpacer">
@@ -687,15 +750,35 @@
             </property>
            </spacer>
           </item>
-          <item row="1" column="1">
-           <widget class="QLabel" name="label_6">
+          <item row="3" column="2">
+           <widget class="QLineEdit" name="TotalIncomeGstLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="2">
+           <widget class="QLineEdit" name="TotalExpensesLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLabel" name="label_12">
             <property name="text">
-             <string>Amount</string>
+             <string>PST</string>
             </property>
            </widget>
           </item>
           <item row="17" column="2">
-           <widget class="QLineEdit" name="totalDuesLineEdit">
+           <widget class="QLineEdit" name="ProvincialDuesLineEdit">
             <property name="acceptDrops">
              <bool>false</bool>
             </property>
@@ -704,45 +787,56 @@
             </property>
            </widget>
           </item>
-          <item row="16" column="2">
-           <widget class="QLineEdit" name="provincialDuesLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="15" column="2">
-           <widget class="QLineEdit" name="federalDuesLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="14" column="2">
-           <widget class="QLineEdit" name="grossRevenueLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="8" column="1">
-           <widget class="QLabel" name="label_11">
+          <item row="2" column="1">
+           <widget class="QLabel" name="label_8">
             <property name="text">
-             <string>Amount</string>
+             <string>PST</string>
+            </property>
+           </widget>
+          </item>
+          <item row="19" column="1">
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>Net revenue</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QLineEdit" name="TotalIncomePstLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="18" column="1">
+           <widget class="QLabel" name="label_19">
+            <property name="text">
+             <string>Total dues</string>
+            </property>
+           </widget>
+          </item>
+          <item row="16" column="1">
+           <widget class="QLabel" name="label_17">
+            <property name="text">
+             <string>Federal dues</string>
+            </property>
+           </widget>
+          </item>
+          <item row="14" column="1" colspan="2">
+           <widget class="QLabel" name="label_15">
+            <property name="text">
+             <string>DECLARABLE REVENUE</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </item>
           <item row="1" column="2">
-           <widget class="QLineEdit" name="totalIncomeLineEdit">
+           <widget class="QLineEdit" name="TotalIncomeLineEdit">
             <property name="acceptDrops">
              <bool>false</bool>
             </property>
@@ -754,18 +848,15 @@
             </property>
            </widget>
           </item>
-          <item row="13" column="1" colspan="2">
-           <widget class="QLabel" name="label_15">
+          <item row="9" column="1">
+           <widget class="QLabel" name="label_11">
             <property name="text">
-             <string>DECLARABLE REVENUE</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
+             <string>Amount</string>
             </property>
            </widget>
           </item>
-          <item row="3" column="2">
-           <widget class="QLineEdit" name="totalIncomeGstLineEdit">
+          <item row="18" column="2">
+           <widget class="QLineEdit" name="TotalDuesLineEdit">
             <property name="acceptDrops">
              <bool>false</bool>
             </property>
@@ -774,8 +865,18 @@
             </property>
            </widget>
           </item>
-          <item row="8" column="2">
-           <widget class="QLineEdit" name="totalExpensesLineEdit">
+          <item row="15" column="2">
+           <widget class="QLineEdit" name="GrossRevenueLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="2">
+           <widget class="QLineEdit" name="TotalExpensesPstLineEdit">
             <property name="acceptDrops">
              <bool>false</bool>
             </property>
@@ -785,80 +886,9 @@
            </widget>
           </item>
           <item row="11" column="1">
-           <widget class="QLabel" name="label_14">
-            <property name="text">
-             <string>PST + GST</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="2">
-           <widget class="QLineEdit" name="totalExpensesGstLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="2" column="2">
-           <widget class="QLineEdit" name="totalIncomePstLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="1">
-           <widget class="QLabel" name="label_7">
-            <property name="text">
-             <string>PST + GST</string>
-            </property>
-           </widget>
-          </item>
-          <item row="10" column="1">
            <widget class="QLabel" name="label_13">
             <property name="text">
              <string>GST</string>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="1">
-           <widget class="QLabel" name="label_12">
-            <property name="text">
-             <string>PST</string>
-            </property>
-           </widget>
-          </item>
-          <item row="4" column="2">
-           <widget class="QLineEdit" name="totalIncomeGstPstLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="9" column="2">
-           <widget class="QLineEdit" name="totalExpensesPstLineEdit">
-            <property name="acceptDrops">
-             <bool>false</bool>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
-          <item row="6" column="1" colspan="2">
-           <widget class="QLabel" name="label_9">
-            <property name="text">
-             <string>EXPENSES</string>
-            </property>
-            <property name="alignment">
-             <set>Qt::AlignCenter</set>
             </property>
            </widget>
           </item>
@@ -872,22 +902,18 @@
             </property>
            </widget>
           </item>
-          <item row="2" column="1">
-           <widget class="QLabel" name="label_8">
-            <property name="text">
-             <string>PST</string>
+          <item row="12" column="2">
+           <widget class="QLineEdit" name="TotalExpensesGstPstLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
             </property>
            </widget>
           </item>
-          <item row="3" column="1">
-           <widget class="QLabel" name="label_10">
-            <property name="text">
-             <string>GST</string>
-            </property>
-           </widget>
-          </item>
-          <item row="19" column="1" colspan="2">
-           <spacer name="verticalSpacer_4">
+          <item row="13" column="1" colspan="2">
+           <spacer name="verticalSpacer_2">
             <property name="orientation">
              <enum>Qt::Vertical</enum>
             </property>
@@ -898,6 +924,36 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item row="11" column="2">
+           <widget class="QLineEdit" name="TotalExpensesGstLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QLineEdit" name="TotalIncomeGstPstLineEdit">
+            <property name="acceptDrops">
+             <bool>false</bool>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="1" colspan="2">
+           <widget class="QCheckBox" name="UseDeductiblePercentageCheckbox">
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>Use deductible % only</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </item>
@@ -912,7 +968,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1091</width>
+     <width>1006</width>
      <height>21</height>
     </rect>
    </property>
@@ -959,7 +1015,7 @@
  <resources/>
  <connections>
   <connection>
-   <sender>yearListWidget</sender>
+   <sender>YearListWidget</sender>
    <signal>itemSelectionChanged()</signal>
    <receiver>MainWindow</receiver>
    <slot>select_years()</slot>
@@ -975,7 +1031,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>monthListWidget</sender>
+   <sender>MonthListWidget</sender>
    <signal>itemSelectionChanged()</signal>
    <receiver>MainWindow</receiver>
    <slot>select_months()</slot>
@@ -991,7 +1047,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>activesListWidget</sender>
+   <sender>ActivesListWidget</sender>
    <signal>itemSelectionChanged()</signal>
    <receiver>MainWindow</receiver>
    <slot>select_actives()</slot>
@@ -1007,7 +1063,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>passivesListWidget</sender>
+   <sender>PassivesListWidget</sender>
    <signal>itemSelectionChanged()</signal>
    <receiver>MainWindow</receiver>
    <slot>select_passives()</slot>
@@ -1087,7 +1143,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>allActiveButton</sender>
+   <sender>AllActiveButton</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>select_all_actives()</slot>
@@ -1151,7 +1207,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>selectActivesFolderButton</sender>
+   <sender>SelectActivesFolderButton</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>open_actives_folder_selection_dialog()</slot>
@@ -1167,7 +1223,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>selectPassivesFolderButton</sender>
+   <sender>SelectPassivesFolderButton</sender>
    <signal>clicked()</signal>
    <receiver>MainWindow</receiver>
    <slot>open_passives_folder_selection_dialog()</slot>
@@ -1183,7 +1239,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>includeActivesSubfolderCheckbox</sender>
+   <sender>IncludeActivesSubfolderCheckbox</sender>
    <signal>stateChanged(int)</signal>
    <receiver>MainWindow</receiver>
    <slot>include_actives_subfolders()</slot>
@@ -1199,7 +1255,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>includePassivesSubfolderCheckbox</sender>
+   <sender>IncludePassivesSubfolderCheckbox</sender>
    <signal>stateChanged(int)</signal>
    <receiver>MainWindow</receiver>
    <slot>include_passives_subfolders()</slot>
@@ -1211,22 +1267,6 @@
     <hint type="destinationlabel">
      <x>980</x>
      <y>243</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>ActivesFolderLineEdit</sender>
-   <signal>textChanged(QString)</signal>
-   <receiver>MainWindow</receiver>
-   <slot>select_actives_folder()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>145</x>
-     <y>52</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>196</x>
-     <y>36</y>
     </hint>
    </hints>
   </connection>
@@ -1247,7 +1287,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit</sender>
+   <sender>FilterActivesLineEdit</sender>
    <signal>textChanged(QString)</signal>
    <receiver>MainWindow</receiver>
    <slot>filter_actives()</slot>
@@ -1263,7 +1303,7 @@
    </hints>
   </connection>
   <connection>
-   <sender>lineEdit_2</sender>
+   <sender>FilterPassivesLineEdit</sender>
    <signal>textChanged(QString)</signal>
    <receiver>MainWindow</receiver>
    <slot>filter_passives()</slot>
@@ -1275,6 +1315,134 @@
     <hint type="destinationlabel">
      <x>685</x>
      <y>132</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ActivesFolderLineEdit</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>select_actives_folder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>439</x>
+     <y>53</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilterPassiveAdhesionFeesCheckbox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filter_passive_adhesion_fees()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>558</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilterPassiveEquipmentCheckbox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filter_passive_equipment()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>558</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilterPassiveOfficeFurnituresCheckbox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filter_passive_office_furnitures()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>775</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilterPassiveOthersCheckbox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filter_passive_others()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>667</x>
+     <y>169</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilterPassiveServicesCheckbox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filter_passive_services()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>667</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>FilterPassiveTravelCheckbox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>filter_passive_travel()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>775</x>
+     <y>146</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>UseDeductiblePercentageCheckbox</sender>
+   <signal>stateChanged(int)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>use_deductible_percentage_only()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>915</x>
+     <y>468</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>502</x>
+     <y>426</y>
     </hint>
    </hints>
   </connection>
@@ -1300,5 +1468,12 @@
   <slot>open_passives_folder_selection_dialog()</slot>
   <slot>filter_actives()</slot>
   <slot>filter_passives()</slot>
+  <slot>use_deductible_percentage_only()</slot>
+  <slot>filter_passive_equipment()</slot>
+  <slot>filter_passive_services()</slot>
+  <slot>filter_passive_travel()</slot>
+  <slot>filter_passive_adhesion_fees()</slot>
+  <slot>filter_passive_others()</slot>
+  <slot>filter_passive_office_furnitures()</slot>
  </slots>
 </ui>

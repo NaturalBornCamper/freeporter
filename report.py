@@ -81,7 +81,7 @@ class Report:
             Log.w(message=("No amounts found in " + filename))
             return False
 
-    def __extract_data(self, folder):
+    def __extract_data(self, folder, direction):
         data = {
             "journal": nested_dict(),
             # "journal": defaultdict(dict),
@@ -91,7 +91,23 @@ class Report:
                 "pst": defaultdict(float),
             }
         }
-        for filepath in glob.glob(os.path.join(folder, constants.PASSIVES_FILE_TYPES)):
+
+        for filepath in glob.iglob(os.path.join(folder, constants.PASSIVES_FILE_TYPES), recursive=True):
+            # Folder is the file's parent folder, unless it's a year, then use another folder up the hierarchy
+            # TODO Instead of backtracking from filename for category (Phone expenses, equipment, ATW, Voxtel),
+            #  use the folders inside the passives and actives folders. Two ways of doing this:
+            #   1- Loop inside loop, scan all folders inside the passives/actives then for each folder scan recursively
+            #     This means a loop inside a loop, so code more indented to the right..
+            #   2- Scan recursively inside the passives/actives and extract the next folder from the scan path
+            #     This means do the same operation on every file in the same category folder (code re-executing)
+            folder = os.path.basename(os.path.dirname(filepath))
+            if (bool(re.match('^\d\d\d\d$', folder))):
+                folder = os.path.basename(os.path.dirname(os.path.dirname(filepath)))
+
+
+
+
+            # for filepath in glob.glob(os.path.join(folder, constants.PASSIVES_FILE_TYPES)):
             file_basename = os.path.splitext(basename(filepath))[0]
 
             journal_entry = self.__process_filename(file_basename)
@@ -103,18 +119,29 @@ class Report:
                     data["journal"][year][month][day] = []
                 data["journal"][year][month][day].append(journal_entry)
                 # data["journal"][journal_entry["date"]].append(journal_entry)
-                #date, year, month, day, name, amount, gst, pst, direction
+                # date, year, month, day, name, category, amount, gst, pst, direction
                 self.journal.insert((
                     journal_entry["date"],
                     year,
                     month,
                     day,
                     journal_entry["description"],
+                    folder,
                     float(journal_entry["subtotal"]),
                     float(journal_entry["gst"]),
                     float(journal_entry["pst"]),
-                    "in"
+                    direction
                 ))
+
+                # Just for printing in console then copy-pasting in cav or Excel file for manual calculations
+                print(
+                    '"' + folder + '",',
+                    '"' + journal_entry["date"] + '",',
+                    '"' + journal_entry["description"] + '",',
+                    '"' + str(journal_entry["subtotal"]) + '",',
+                    '"' + str(journal_entry["gst"]) + '",',
+                    '"' + str(journal_entry["pst"]) + '"'
+                )
 
                 # for x in ("subtotal", "gst", "pst"):
                 #     data["total"][x][journal_entry[x]["currency"]] += journal_entry[x]["amount"]
@@ -134,11 +161,13 @@ class Report:
         return income_tax
 
     def generate_report(self):
-        self.passive = self.__extract_data(constants.FOLDERS["passive"])
+        self.__extract_data(constants.FOLDERS["passive"], constants.MONEY_OUTPUT)
+
+        self.__extract_data(constants.FOLDERS["active"], constants.MONEY_INPUT)
 
         # Extract "actives" subfolders
-        for folder in glob.glob(os.path.join(constants.FOLDERS["active"], '*/')):
-            self.active["clients"][basename(dirname(folder))] = client_data = self.__extract_data(folder)
+        # for folder in glob.glob(os.path.join(constants.FOLDERS["active"], '*/')):
+        #     self.active["clients"][basename(dirname(folder))] = self.__extract_data(folder, constants.MONEY_INPUT)
 
         self.journal.commit_changes()
 

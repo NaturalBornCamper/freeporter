@@ -1,9 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6f28d6d5-365f-4afb-ab39-ab0e52ebf7c9" name="Default Changelist" comment="" />
-    <ignored path="venv/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="6f28d6d5-365f-4afb-ab39-ab0e52ebf7c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/budget-extractor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/budget-extractor.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controllers/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/journal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/journal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Models/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/UI_MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UI_MainWindow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Views/UI_MainWindow.ui" beforeDir="false" afterPath="$PROJECT_DIR$/Views/UI_MainWindow.ui" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report.py" beforeDir="false" afterPath="$PROJECT_DIR$/report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +24,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/budget_extractor$main.coverage" NAME="main Coverage Results" MODIFIED="1546870351061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Budget_Tool$main.coverage" NAME="main Coverage Results" MODIFIED="1548134766692" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Freeporter$main.coverage" NAME="main Coverage Results" MODIFIED="1549785351415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Freeporter$main.coverage" NAME="main Coverage Results" MODIFIED="1552448181829" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Freeporter$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1549454386775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
@@ -29,79 +41,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/constants.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="13" selection-start-line="2" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1220">
-              <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controllers/MainWindow.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#45#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/model.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Models/journal.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/report.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-183">
-              <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -109,98 +48,31 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>extract_price</find>
-      <find>CURRENCIES</find>
-      <find>data</find>
-      <find>log</find>
-      <find>Log</find>
-      <find>&lt;slot&gt;</find>
-      <find>setHidden</find>
-      <find>year</find>
-      <find>yearListWidget</find>
-      <find>select_all_years</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>self):</replace>
-      <replace>def</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/Log.py" />
-        <option value="$PROJECT_DIR$/consants.py" />
-        <option value="$PROJECT_DIR$/log.py" />
-        <option value="$PROJECT_DIR$/window_with_menu.py" />
-        <option value="$PROJECT_DIR$/window.py" />
-        <option value="$PROJECT_DIR$/window2.py" />
-        <option value="$PROJECT_DIR$/untitled.py" />
-        <option value="$PROJECT_DIR$/windows.py" />
-        <option value="$PROJECT_DIR$/MainWindow.py" />
-        <option value="$PROJECT_DIR$/UI_MainWindow.py" />
-        <option value="$PROJECT_DIR$/Models/model.py" />
-        <option value="$PROJECT_DIR$/report.py" />
-        <option value="$PROJECT_DIR$/constants.py" />
-        <option value="$PROJECT_DIR$/Views/UI_MainWindow.py" />
-        <option value="$PROJECT_DIR$/Models/journal.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/Controllers/MainWindow.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="260" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
-  </component>
+  <component name="JupyterTrust" id="d2235384-eab8-4e2b-9356-f9fea7c718c3" />
+  <component name="ProjectId" id="1OZNdEQMqSUB6z3Xb8Xqj8ncWMh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Freeporter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Freeporter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Freeporter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Freeporter" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Freeporter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Freeporter" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Freeporter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Freeporter" type="462c0819:PsiDirectoryNode" />
-              <item name="Views" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="C:/PyCharm External Tools/venv/Lib/site-packages/QtDesigner/designer.exe" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -211,18 +83,6 @@
       <recent name="E:\DEV\Freeporter" />
       <recent name="E:\DEV\Python Scripts\budget-extractor" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -253,6 +113,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -275,7 +136,42 @@
       <workItem from="1548139301392" duration="15190000" />
       <workItem from="1548289896559" duration="155000" />
       <workItem from="1549105113128" duration="24575000" />
-      <workItem from="1549432731940" duration="44651000" />
+      <workItem from="1549432731940" duration="54030000" />
+      <workItem from="1549961681631" duration="5071000" />
+      <workItem from="1551515815808" duration="515000" />
+      <workItem from="1551528179575" duration="1859000" />
+      <workItem from="1552124528065" duration="2560000" />
+      <workItem from="1552364763618" duration="12847000" />
+      <workItem from="1555928757242" duration="2676000" />
+      <workItem from="1555985394678" duration="4958000" />
+      <workItem from="1556114252614" duration="11336000" />
+      <workItem from="1556639841374" duration="642000" />
+      <workItem from="1562769896327" duration="689000" />
+      <workItem from="1564181268348" duration="1154000" />
+      <workItem from="1565373187562" duration="233000" />
+      <workItem from="1566822782418" duration="71000" />
+      <workItem from="1567119527162" duration="963000" />
+      <workItem from="1567121184441" duration="819000" />
+      <workItem from="1567139502764" duration="594000" />
+      <workItem from="1567173542045" duration="251000" />
+      <workItem from="1567176008222" duration="2433000" />
+      <workItem from="1572565465508" duration="1765000" />
+      <workItem from="1575324189314" duration="15000" />
+      <workItem from="1581880171893" duration="2126000" />
+      <workItem from="1582060620687" duration="812000" />
+      <workItem from="1590974929610" duration="330000" />
+      <workItem from="1590975278812" duration="946000" />
+      <workItem from="1592758014388" duration="4344000" />
+      <workItem from="1593799667129" duration="15000" />
+      <workItem from="1593799720806" duration="702000" />
+      <workItem from="1595250319370" duration="4910000" />
+      <workItem from="1595447178980" duration="3643000" />
+      <workItem from="1595858708564" duration="1114000" />
+      <workItem from="1596727908932" duration="83000" />
+      <workItem from="1596728517271" duration="181000" />
+      <workItem from="1596729307385" duration="72000" />
+      <workItem from="1596729541688" duration="22000" />
+      <workItem from="1601408128988" duration="14691000" />
     </task>
     <task id="LOCAL-00001" summary="+Adds Model files for sqlite3&#10;=Adds required modules&#10;=Reorders files into MVC&#10;+Adds ui files to have graphical interface">
       <created>1549790389811</created>
@@ -287,9 +183,6 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="136258000" />
-  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -299,216 +192,75 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4992948" visible="true" weight="0.14072494" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3445287" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
-      <window_info anchor="bottom" id="Python Console" order="12" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Structure" order="5" sideWeight="0.50070524" side_tool="true" visible="true" weight="0.14072494" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+Adds Model files for sqlite3&#10;=Adds required modules&#10;=Reorders files into MVC&#10;+Adds ui files to have graphical interface" />
     <option name="LAST_COMMIT_MESSAGE" value="+Adds Model files for sqlite3&#10;=Adds required modules&#10;=Reorders files into MVC&#10;+Adds ui files to have graphical interface" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://C:/Python37/Lib/ntpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="200" column="4" selection-start-line="200" selection-start-column="4" selection-end-line="200" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/kivy/app.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/kivy/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/kivy/uix/button.py" />
-    <entry file="file://$PROJECT_DIR$/venv/pyvenv.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.py" />
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/192307294/PyQt5/QtWidgets/QWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="737" column="8" selection-start-line="737" selection-start-column="8" selection-end-line="737" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/192307294/PyQt5/QtCore/Qt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="243" column="4" selection-start-line="243" selection-start-column="4" selection-end-line="243" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/untitled.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1060">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/UI_MainWindow.ui">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="1166" column="8" selection-start-line="1183" selection-start-column="40" selection-end-line="1183" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/192307294/PyQt5/QtWidgets/QListWidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/192307294/PyQt5/QtWidgets/QApplication.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python37/Lib/locale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="320" column="34" selection-start-line="320" selection-start-column="34" selection-end-line="320" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.3/system/python_stubs/192307294/nt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="380" column="4" selection-start-line="380" selection-start-column="4" selection-end-line="380" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="115" column="24" lean-forward="true" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dialog.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bob.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="13" selection-start-line="2" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/window.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="1" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/window2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-209">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Views/UI_MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI_MainWindow.ui">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Models/journal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1220">
-          <caret line="61" column="39" lean-forward="true" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controllers/MainWindow.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="58" column="30" selection-start-line="58" selection-start-column="30" selection-end-line="58" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="WindowStateProjectService">
+    <state x="466" y="183" key="#Inspections" timestamp="1601430364378">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="466" y="183" key="#Inspections/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601430364378" />
+    <state x="639" y="265" key="#com.intellij.tools.ToolEditorDialog" timestamp="1601431070799">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="639" y="265" key="#com.intellij.tools.ToolEditorDialog/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601431070799" />
+    <state x="648" y="266" key="FileChooserDialogImpl" timestamp="1601426504397">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596728005484" />
+    <state x="648" y="266" key="FileChooserDialogImpl/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601426504397" />
+    <state width="1637" height="175" key="GridCell.Tab.0.bottom" timestamp="1601503415242">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
+    <state width="1637" height="175" key="GridCell.Tab.0.bottom/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
+    <state width="1637" height="175" key="GridCell.Tab.0.center" timestamp="1601503415242">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="366" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
+    <state width="1637" height="175" key="GridCell.Tab.0.center/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
+    <state width="1637" height="175" key="GridCell.Tab.0.left" timestamp="1601503415242">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="366" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627656" />
+    <state width="1637" height="175" key="GridCell.Tab.0.left/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
+    <state width="1637" height="175" key="GridCell.Tab.0.right" timestamp="1601503415242">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1877" height="366" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
+    <state width="1637" height="175" key="GridCell.Tab.0.right/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601503415242" />
+    <state x="403" y="159" key="SettingsEditor" timestamp="1601431071517">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596729556309" />
+    <state x="403" y="159" key="SettingsEditor/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601431071517" />
+    <state x="222" y="73" width="1228" height="848" key="find.popup" timestamp="1601436237315">
+      <screen x="0" y="0" width="1680" height="1010" />
+    </state>
+    <state x="254" y="75" width="1403" height="873" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595448900419" />
+    <state x="222" y="73" width="1228" height="848" key="find.popup/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601436237315" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595448877563">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595448877563" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Freeporter$main.coverage" NAME="main Coverage Results" MODIFIED="1601436248208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
