@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f28d6d5-365f-4afb-ab39-ab0e52ebf7c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controllers/MainWindow.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controllers/MainWindow.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/journal.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/journal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/constants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report.py" beforeDir="false" afterPath="$PROJECT_DIR$/report.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="d2235384-eab8-4e2b-9356-f9fea7c718c3" />
+  <component name="JupyterTrust" id="cdf5ecc5-0838-4fe1-a789-2438508142b7" />
   <component name="ProjectId" id="1OZNdEQMqSUB6z3Xb8Xqj8ncWMh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -64,7 +60,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -166,6 +162,8 @@
       <workItem from="1596729541688" duration="22000" />
       <workItem from="1601408128988" duration="14691000" />
       <workItem from="1603653035833" duration="7318000" />
+      <workItem from="1603661558683" duration="66000" />
+      <workItem from="1604403705583" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="+Adds Model files for sqlite3&#10;=Adds required modules&#10;=Reorders files into MVC&#10;+Adds ui files to have graphical interface">
       <created>1549790389811</created>
@@ -219,42 +217,37 @@
     </state>
     <state x="740" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1596728005484" />
     <state x="648" y="266" key="FileChooserDialogImpl/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601426504397" />
-    <state width="1637" height="314" key="GridCell.Tab.0.bottom" timestamp="1603661037098">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom" timestamp="1604409535924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="366" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
+    <state width="1877" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1604409535924" />
     <state width="1637" height="314" key="GridCell.Tab.0.bottom/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037098" />
-    <state width="1637" height="314" key="GridCell.Tab.0.center" timestamp="1603661037097">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center" timestamp="1604409535924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="366" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
+    <state width="1877" height="208" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1604409535924" />
     <state width="1637" height="314" key="GridCell.Tab.0.center/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037097" />
-    <state width="1637" height="314" key="GridCell.Tab.0.left" timestamp="1603661037097">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left" timestamp="1604409535923">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="366" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627656" />
+    <state width="1877" height="208" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1604409535923" />
     <state width="1637" height="314" key="GridCell.Tab.0.left/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037097" />
-    <state width="1637" height="314" key="GridCell.Tab.0.right" timestamp="1603661037097">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right" timestamp="1604409535924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="366" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1595598627659" />
+    <state width="1877" height="208" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1604409535924" />
     <state width="1637" height="314" key="GridCell.Tab.0.right/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603661037097" />
-    <state x="403" y="159" key="SettingsEditor" timestamp="1601431071517">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1604403845712">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1596729556309" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604403845712" />
     <state x="403" y="159" key="SettingsEditor/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1601431071517" />
     <state x="222" y="73" width="1228" height="848" key="find.popup" timestamp="1603660640850">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="254" y="75" width="1403" height="873" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595448900419" />
     <state x="222" y="73" width="1228" height="848" key="find.popup/1680.0.1680.1010/0.0.1680.1010/-900.0.900.1400@0.0.1680.1010" timestamp="1603660640850" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595448877563">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1595448877563" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Freeporter$main.coverage" NAME="main Coverage Results" MODIFIED="1603661037090" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Freeporter$main.coverage" NAME="main Coverage Results" MODIFIED="1604409504108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

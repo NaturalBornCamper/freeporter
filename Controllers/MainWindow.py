@@ -128,8 +128,8 @@ class MainWindow(QMainWindow):
         # locale.setlocale(locale.LC_ALL, '')
         locale.setlocale(locale.LC_ALL, 'en_CA')
         self.main_ui.TotalIncomeLineEdit.setText(locale.currency(amount_total, grouping=True))
-        self.main_ui.TotalIncomePstLineEdit.setText(locale.currency(gst_total, grouping=True))
-        self.main_ui.TotalIncomeGstLineEdit.setText(locale.currency(pst_total, grouping=True))
+        self.main_ui.TotalIncomePstLineEdit.setText(locale.currency(pst_total, grouping=True))
+        self.main_ui.TotalIncomeGstLineEdit.setText(locale.currency(gst_total, grouping=True))
         self.main_ui.TotalIncomeGstPstLineEdit.setText(locale.currency(gst_total + pst_total, grouping=True))
 
         # for journal_item in self.journal.get_items(selected_years=selected_years, selected_months=selected_months):
@@ -156,8 +156,8 @@ class MainWindow(QMainWindow):
 
         locale.setlocale(locale.LC_ALL, 'en_CA')
         self.main_ui.TotalExpensesLineEdit.setText(locale.currency(amount_total, grouping=True))
-        self.main_ui.TotalExpensesPstLineEdit.setText(locale.currency(gst_total, grouping=True))
-        self.main_ui.TotalExpensesGstLineEdit.setText(locale.currency(pst_total, grouping=True))
+        self.main_ui.TotalExpensesPstLineEdit.setText(locale.currency(pst_total, grouping=True))
+        self.main_ui.TotalExpensesGstLineEdit.setText(locale.currency(gst_total, grouping=True))
         self.main_ui.TotalExpensesGstPstLineEdit.setText(locale.currency(gst_total + pst_total, grouping=True))
 
     def select_none_years(self):
